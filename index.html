@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>trillo &mdash; Your all-in-one booking app</title>
+  </head>
+  <body>
+    <nav class="container">
+      <header class="header">
+        <img src="img/logo.png" alt="trillo logo" class="logo" />
+
+        <form action="#" class="search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search hotels"
+          />
+
+          <button class="search__button">
+            <svg class="search__icon">
+              <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+
+        <nav class="user-nav">
+          <div class="user-nav__icon-box user-nav__bookmark">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+            </svg>
+
+            <span class="user-nav__notification">7</span>
+
+            <div class="user-nav__bookmark__dropdown">
+              <ul class="user-nav__bookmark__dropdown__list">
+                <li class="user-nav__bookmark__dropdown__item">
+                  <img
+                    src="img/hotel-4.jpg"
+                    alt="Hotel 4"
+                    class="user-nav__bookmark__dropdown__photo"
+                  />
+                  <div class="user-nav__bookmark__dropdown__info-box">
+                    <p class="user-nav__bookmark__dropdown__title">
+                      The Cove At Atlantis
+                    </p>
+                    <div class="user-nav__bookmark__dropdown__location">
+                      <svg class="user-nav__bookmark__dropdown__pin">
+                        <use
+                          xlink:href="img/sprite.svg#icon-location-pin"
+                        ></use>
+                      </svg>
+                      <button class="user-nav__bookmark__dropdown__button">
+                        Paradise Island, Bahamas
+                      </button>
+                      <div class="user-nav__bookmark__dropdown__rating">
+                        <svg class="user-nav__bookmark__dropdown__star">
+                          <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="user-nav__bookmark__dropdown__star">
+                          <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="user-nav__bookmark__dropdown__star">
+                          <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="user-nav__bookmark__dropdown__star">
+                          <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="user-nav__bookmark__dropdown__star">
+                          <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="user-nav__bookmark__dropdown__mark">
+                    <svg
+                      class="user-nav__bookmark__dropdown__icon user-nav__bookmark__dropdown__icon--active"
+                    >
+                      <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                    </svg>
+                  </div>
+                </li>
+
+                <li class="user-nav__bookmark__dropdown__item">
+                  <img
+                    src="img/hotel-5.jpg"
+                    alt="Hotel 5"
+                    class="user-nav__bookmark__dropdown__photo"
+                  />
+                  <div class="user-nav__bookmark__dropdown__info-box">
+                    <p class="user-nav__bookmark__dropdown__title">
+                      Coeur des alpes
+                    </p>
+                    <div class="user-nav__bookmark__dropdown__location">
+                      <svg class="user-nav__bookmark__dropdown__pin">
+                        <use
+                          xlink:href="img/sprite.svg#icon-location-pin"
+                        ></use>
+                      </svg>
+                      <button class="user-nav__bookmark__dropdown__button">
+                        Zermatt, Switzerland
+                      </button>
+                      <div class="user-nav__bookmark__dropdown__rating">
+                        <svg class="user-nav__bookmark__dropdown__star">
+                          <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="user-nav__bookmark__dropdown__star">
+                          <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="user-nav__bookmark__dropdown__star">
+                          <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="user-nav__bookmark__dropdown__star">
+                          <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="user-nav__bookmark__dropdown__star">
+                          <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="user-nav__bookmark__dropdown__mark">
+                    <svg class="user-nav__bookmark__dropdown__icon">
+                      <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                    </svg>
+                  </div>
+                </li>
+
+                <li class="user-nav__bookmark__dropdown__item">
+                  <img
+                    src="img/hotel-6.jpg"
+                    alt="Hotel 6"
+                    class="user-nav__bookmark__dropdown__photo"
+                  />
+                  <div class="user-nav__bookmark__dropdown__info-box">
+                    <p class="user-nav__bookmark__dropdown__title">
+                      Hotel kakslauttanen
+                    </p>
+                    <div class="user-nav__bookmark__dropdown__location">
+                      <svg class="user-nav__bookmark__dropdown__pin">
+                        <use
+                          xlink:href="img/sprite.svg#icon-location-pin"
+                        ></use>
+                      </svg>
+                      <button class="user-nav__bookmark__dropdown__button">
+                        Kakslauttanen, Finland
+                      </button>
+                      <div class="user-nav__bookmark__dropdown__rating">
+                        <svg class="user-nav__bookmark__dropdown__star">
+                          <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="user-nav__bookmark__dropdown__star">
+                          <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="user-nav__bookmark__dropdown__star">
+                          <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="user-nav__bookmark__dropdown__star">
+                          <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="user-nav__bookmark__dropdown__star">
+                          <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="user-nav__bookmark__dropdown__mark">
+                    <svg class="user-nav__bookmark__dropdown__icon">
+                      <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                    </svg>
+                  </div>
+                </li>
+
+                <li class="user-nav__bookmark__dropdown__item">
+                  <img
+                    src="img/hotel-7.jpg"
+                    alt="Hotel 7"
+                    class="user-nav__bookmark__dropdown__photo"
+                  />
+                  <div class="user-nav__bookmark__dropdown__info-box">
+                    <p class="user-nav__bookmark__dropdown__title">
+                      Four Seasons Resort
+                    </p>
+                    <div class="user-nav__bookmark__dropdown__location">
+                      <svg class="user-nav__bookmark__dropdown__pin">
+                        <use
+                          xlink:href="img/sprite.svg#icon-location-pin"
+                        ></use>
+                      </svg>
+                      <button class="user-nav__bookmark__dropdown__button">
+                        Bora Bora, French Polonesia
+                      </button>
+                      <div class="user-nav__bookmark__dropdown__rating">
+                        <svg class="user-nav__bookmark__dropdown__star">
+                          <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="user-nav__bookmark__dropdown__star">
+                          <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="user-nav__bookmark__dropdown__star">
+                          <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="user-nav__bookmark__dropdown__star">
+                          <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="user-nav__bookmark__dropdown__star">
+                          <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="user-nav__bookmark__dropdown__mark">
+                    <svg class="user-nav__bookmark__dropdown__icon">
+                      <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="user-nav__icon-box user-nav__message">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-chat"></use>
+            </svg>
+
+            <span class="user-nav__notification">13</span>
+
+            <div class="user-nav__message__dropdown">
+              <ul class="user-nav__message__dropdown__list">
+                <li
+                  class="user-nav__message__dropdown__item user-nav__message__dropdown__item--active"
+                >
+                  <img
+                    src="img/user-2.jpg"
+                    alt="Friend 2"
+                    class="user-nav__message__dropdown__photo"
+                  />
+
+                  <div class="user-nav__message__dropdown__info-box">
+                    <p class="user-nav__message__dropdown__info-box__name">
+                      Mary Thomas
+                    </p>
+                    <p class="user-nav__message__dropdown__info-box__text">
+                      Lorem ipsum dolor sit amet...
+                    </p>
+                  </div>
+
+                  <div class="user-nav__message__dropdown__timestamp">
+                    <p class="user-nav__message__dropdown__timestamp__time">
+                      10:55pm
+                    </p>
+                    <p class="user-nav__message__dropdown__timestamp__date">
+                      June 19th, 2019
+                    </p>
+                  </div>
+                </li>
+                <li class="user-nav__message__dropdown__item">
+                  <img
+                    src="img/user-1.jpg"
+                    alt="Friend 1"
+                    class="user-nav__message__dropdown__photo"
+                  />
+
+                  <div class="user-nav__message__dropdown__info-box">
+                    <p class="user-nav__message__dropdown__info-box__name">
+                      Nick Smith
+                    </p>
+                    <p class="user-nav__message__dropdown__info-box__text">
+                      Lorem ipsum dolor sit amet...
+                    </p>
+                  </div>
+
+                  <div class="user-nav__message__dropdown__timestamp">
+                    <p class="user-nav__message__dropdown__timestamp__time">
+                      6:30pm
+                    </p>
+                    <p class="user-nav__message__dropdown__timestamp__date">
+                      June 19th, 2019
+                    </p>
+                  </div>
+                </li>
+                <li class="user-nav__message__dropdown__item">
+                  <img
+                    src="img/user-3.jpg"
+                    alt="Friend 3"
+                    class="user-nav__message__dropdown__photo"
+                  />
+
+                  <div class="user-nav__message__dropdown__info-box">
+                    <p class="user-nav__message__dropdown__info-box__name">
+                      George Thomas
+                    </p>
+                    <p class="user-nav__message__dropdown__info-box__text">
+                      Lorem ipsum dolor sit amet...
+                    </p>
+                  </div>
+
+                  <div class="user-nav__message__dropdown__timestamp">
+                    <p class="user-nav__message__dropdown__timestamp__time">
+                      10:02am
+                    </p>
+                    <p class="user-nav__message__dropdown__timestamp__date">
+                      June 19th, 2019
+                    </p>
+                  </div>
+                </li>
+                <li class="user-nav__message__dropdown__item">
+                  <img
+                    src="img/user-4.jpg"
+                    alt="Friend 4"
+                    class="user-nav__message__dropdown__photo"
+                  />
+
+                  <div class="user-nav__message__dropdown__info-box">
+                    <p class="user-nav__message__dropdown__info-box__name">
+                      Tom Banks
+                    </p>
+                    <p class="user-nav__message__dropdown__info-box__text">
+                      Lorem ipsum dolor sit amet...
+                    </p>
+                  </div>
+
+                  <div class="user-nav__message__dropdown__timestamp">
+                    <p class="user-nav__message__dropdown__timestamp__time">
+                      4:32pm
+                    </p>
+                    <p class="user-nav__message__dropdown__timestamp__date">
+                      June 18th, 2019
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="user-nav__user">
+            <img
+              src="img/user.jpg"
+              alt="User photo"
+              class="user-nav__user-photo"
+            />
+
+            <span class="user-nav__user-name">Ben</span>
+
+            <nav class="user-nav__user__dropdown">
+              <ul class="user-nav__user__dropdown__list">
+                <li class="user-nav__user__dropdown__item">
+                  <a href="#" class="user-nav__user__dropdown__link">
+                    <svg class="user-nav__user__dropdown__icon">
+                      <use xlink:href="img/sprite.svg#icon-home"></use>
+                    </svg>
+                    Account
+                  </a>
+                </li>
+                <li class="user-nav__user__dropdown__item">
+                  <a href="#" class="user-nav__user__dropdown__link">
+                    <svg class="user-nav__user__dropdown__icon">
+                      <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                    </svg>
+                    My Bookings
+                  </a>
+                </li>
+                <li class="user-nav__user__dropdown__item">
+                  <a href="#" class="user-nav__user__dropdown__link">
+                    <svg class="user-nav__user__dropdown__icon">
+                      <use xlink:href="img/sprite.svg#icon-key"></use>
+                    </svg>
+                    Settings
+                  </a>
+                </li>
+                <li class="user-nav__user__dropdown__item">
+                  <a href="#" class="user-nav__user__dropdown__link">
+                    <svg class="user-nav__user__dropdown__icon">
+                      <use
+                        xlink:href="img/sprite.svg#icon-aircraft-take-off"
+                      ></use>
+                    </svg>
+                    Log Out
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </nav>
+      </header>
+
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav__item side-nav__item--active">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-home"></use>
+                </svg>
+                <span>Hotel</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                </svg>
+                <span>Flight</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-key"></use>
+                </svg>
+                <span>Car Rental</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-map"></use>
+                </svg>
+                <span>Tours</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="legal">
+            &copy: 2019 by trillo. All rights reserved. Built by Beniamin
+            Krzanowski. Original author, Jonas Schmedtmann.
+          </div>
+        </nav>
+        <main class="hotel-view">
+          <div class="gallery">
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-1.jpg"
+                alt="Photo of hotel 1"
+                class="gallery__photo"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-2.jpg"
+                alt="Photo of hotel 2"
+                class="gallery__photo"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-3.jpg"
+                alt="Photo of hotel 3"
+                class="gallery__photo"
+              />
+            </figure>
+          </div>
+
+          <div class="overview">
+            <h1 class="overview__heading">
+              Hotel Las Palmas
+            </h1>
+
+            <div class="overview__stars">
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+
+            <div class="overview__location">
+              <svg class="overview__icon-location">
+                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+              </svg>
+              <button class="btn-inline">Albufeira, Portugal</button>
+            </div>
+
+            <div class="overview__rating">
+              <div class="overview__rating-average">8.6</div>
+              <div class="overview__rating-count">429 votes</div>
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class="description">
+              <p class="paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Provident optio minus molestiae necessitatibus, incidunt
+                veritatis eaque, inventore sed eveniet facilis cumque doloribus
+                magnam, iusto nam?
+              </p>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                molestias soluta omnis.
+              </p>
+
+              <ul class="list">
+                <li class="list__item">Close to the beach</li>
+                <li class="list__item">Breakfast included</li>
+                <li class="list__item">Free airport shuttle</li>
+                <li class="list__item">Free wifi in all rooms</li>
+                <li class="list__item">Air conditioning and heating</li>
+                <li class="list__item">Pets allowed</li>
+                <li class="list__item">We speak all languages</li>
+                <li class="list__item">Perfect for families</li>
+              </ul>
+
+              <div class="recommend">
+                <p class="recommend__count">
+                  Lucy and 3 other friends recommend this hotel.
+                </p>
+                <div class="recommend__friends">
+                  <img
+                    src="img/user-3.jpg"
+                    alt="Friend 1"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-4.jpg"
+                    alt="Friend 2"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-5.jpg"
+                    alt="Friend 3"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-6.jpg"
+                    alt="Friend 4"
+                    class="recommend__photo"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <figure class="user-reviews">
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Delectus distinctio odio ducimus tempora sunt consectetur
+                  assumenda, corrupti nesciunt!
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="img/user-1.jpg"
+                    alt="User 1"
+                    class="review__photo"
+                  />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Nick Smith</p>
+                    <p class="review__user-date">Mar. 23rd, 2019</p>
+                  </div>
+                  <div class="review__rating">7.8</div>
+                </figcaption>
+              </figure>
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aspernatur ratione corrupti quod nulla rem adipisci.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="img/user-2.jpg"
+                    alt="User 2"
+                    class="review__photo"
+                  />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Mary Thomas</p>
+                    <p class="review__user-date">Feb. 13th, 2019</p>
+                  </div>
+                  <div class="review__rating">9.3</div>
+                </figcaption>
+              </figure>
+
+              <button class="btn-inline">Show all <span>&rarr;</span></button>
+            </figure>
+          </div>
+          <div class="cta">
+            <h2 class="cta__book-now">
+              Good news! We have 4 free rooms for your selected dates!
+            </h2>
+            <button class="btn">
+              <span class="btn__visible">Book now</span>
+              <span class="btn__invisible">Only 4 rooms left</span>
+            </button>
+          </div>
+        </main>
+      </div>
+    </nav>
+  </body>
+</html>
