@@ -6,6 +6,6 @@ A mock travel booking website using html and sass.
 
 Run `npm install`
 
-##Usage
+## Usage
 
 Run `npm run devserver` to view website in live-server.
